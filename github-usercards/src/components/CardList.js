@@ -3,8 +3,18 @@ import ReactDOM from "react-dom";
 import Card from "./Card";
 
 class CardList extends React.Component {
+    constructor() {
+        super();
+    }
+
     render() {
-        return;
+        return (
+            <div className="card-list">
+                {this.props.users.map(user => (
+                    <Card user={user} />
+                ))}
+            </div>
+        );
     }
 }
 
