@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import axios from "axios";
 
-const Card = user => {
+const Card = (user) => {
     console.log("user.login passed to Card:\n", user.user);
     return (
         <div className="card">

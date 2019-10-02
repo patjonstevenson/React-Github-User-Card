@@ -76,11 +76,11 @@ class App extends React.Component {
         {
           this.state.haveUser
             ? (
-              <>
+              <div className="user">
                 <h2>User</h2>
-                <Card key={this.state.user.id} user={this.state.user} />
-                <button onClick={this.fetchFollowers}>See Followers</button>
-              </>
+                <Card  key={this.state.user.id} user={this.state.user} />
+                <button className="see-followers" onClick={this.fetchFollowers}>See Followers</button>
+              </div>
             )
             : <></>
         }
@@ -90,7 +90,9 @@ class App extends React.Component {
             ? (
               <>
                 <h2>Followers</h2>
+                <div className="followers">
                 {this.state.followers.map(follower => <Card key={follower.id} user={follower} />)}
+                </div>
               </>
             )
             : <></>
