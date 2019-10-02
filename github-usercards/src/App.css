@@ -1,0 +1,43 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 5% 10%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 2.5% 30%;
+  height: 80px;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 30vh;
+}
+
+
+.followers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 30%;
+  margin: 5%;
+  padding: 5%;
+}
+
+.card img {
+  width: 100%;
+}
+
+.see-followers {
+  width: 50%;
+}
